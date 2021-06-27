@@ -1,0 +1,20 @@
+{
+  "name": "setheum-indexer",
+  "version": "0.1.0",
+  "description": "Setheum Indexer",
+  "main": "index.js",
+  "author": "SetheumJS Developers <setheumjs@gmail.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "ts-node ./index.ts"
+  },
+  "dependencies": {
+    "@setheum-js/types": "^0.1.0",
+    "@open-web3/indexer": "^0.9.4-3",
+    "@polkadot/keyring": "^6.1.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "ts-node": "^9.0.0"
+  }
+}

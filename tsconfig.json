@@ -1,0 +1,17 @@
+{
+  "extends": "./node_modules/@polkadot/dev/config/tsconfig",
+  "exclude": ["build/**/*", "**/build/**/*", "**/__tests__/**/*"],
+  "compilerOptions": {
+    "target": "es2018",
+    "baseUrl": ".",
+    "noUnusedLocals": false,
+    "paths": {
+      "setheum-indexer": ["packages/setheum-indexer/src"],
+      "setheum-indexer/*": ["packages/setheum-indexer/src/*"],
+      "setheum-oracle-dispatcher": ["packages/setheum-oracle-dispatcher/src"],
+      "setheum-oracle-dispatcher/*": ["packages/setheum-oracle-dispatcher/src/*"]
+    },
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@polkadot/ts", "./node_modules/@types"]
+  }
+}
